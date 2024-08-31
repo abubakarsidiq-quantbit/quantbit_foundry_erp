@@ -1,39 +1,42 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:grade_type",
- "creation": "2024-08-08 14:58:35.973090",
+ "autoname": "field:foundry_unit_name",
+ "creation": "2024-08-27 15:06:46.305638",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company",
-  "section_break_wbasg",
-  "grade_type"
+  "section_break_bbe3",
+  "foundry_unit_name",
+  "company"
  ],
  "fields": [
+  {
+   "fieldname": "section_break_bbe3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "foundry_unit_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Foundry Unit Name",
+   "reqd": 1,
+   "unique": 1
+  },
   {
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
-  },
-  {
-   "fieldname": "section_break_wbasg",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "grade_type",
-   "fieldtype": "Data",
-   "label": "Grade Type",
-   "unique": 1
+   "options": "Company",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-28 11:01:26.369710",
+ "modified": "2024-08-27 15:14:35.660145",
  "modified_by": "Administrator",
  "module": "Quantbit Foundry ERP",
- "name": "Grade Type",
+ "name": "Foundry Unit",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
